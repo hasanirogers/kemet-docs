@@ -1,0 +1,31 @@
+.box {
+  color: var(--kemet-color-white);
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid var(--kemet-color-black-10);
+  background-color: var(--kemet-color-primary);
+}
+
+[kemet-layout="flexcolumn"] .box {
+  height: 100%;
+}
+
+.max-width-960 {
+  max-width: 960px;
+  margin: auto;
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+.npm-install {
+  display: flex !important;
+  justify-content: center;
+
+  & > * {
+    margin: auto;
+  }
+}

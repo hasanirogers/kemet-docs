@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "tags": [
+    {
+      "name": "fds-primary-button",
+      "description": "A primary button.",
+      "properties": [
+        {
+          "name": "outlined",
+          "type": "Boolean",
+          "description": "Determines whether or not to show the button in an outlined style.",
+          "default": false
+        },
+        {
+          "name": "link",
+          "type": "String",
+          "description": "Links the button to an URL.",
+          "default": null
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "description": "An a11y label for the button.",
+          "default": null
+        },
+        {
+          "name": "chevron",
+          "type": "String",
+          "description": "Places a chevron to the right or left of a button's text.",
+          "default": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "description": "Disables the button.",
+          "default": false
+        },
+        {
+          "name": "brand",
+          "type": "String",
+          "description": "Determines the brand styles to apply.",
+          "default": "ford"
+        }
+      ],
+      "events": [],
+      "slots": [],
+      "cssProperties": []
+    },
+    {
+      "name": "fds-tabs",
+      "description": "The tabs container element.",
+      "properties": [
+        {
+          "name": "selected",
+          "type": "String",
+          "description": "Represents which tab is currently selected.",
+          "default": ""
+        }
+      ],
+      "events": [
+        {
+          "name": "fds-tab-changed",
+          "description": "Called when a tab is changed."
+        }
+      ],
+      "slots": [
+        {
+          "name": "links",
+          "description": "The tabs that link to a panel."
+        },
+        {
+          "name": "panel",
+          "description": "The content that corresponds to each tab."
+        }
+      ],
+      "cssProperties": []
+    },
+    {
+      "name": "fds-tab",
+      "description": "A tab that serves as a link to a panel.",
+      "properties": [
+        {
+          "name": "selected",
+          "type": "Boolean",
+          "description": "Is applied to the active tab.",
+          "default": false
+        },
+        {
+          "name": "link",
+          "type": "String",
+          "description": "Represents which panel corresponds to the tab."
+        }
+      ],
+      "events": [
+        {
+          "name": "fds-tab-changed",
+          "description": "Called when a tab is changed."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The contents of the tab."
+        }
+      ],
+      "cssProperties": []
+    },
+    {
+      "name": "fds-tab-panel",
+      "description": "Shows the contents of a tab.",
+      "properties": [
+        {
+          "name": "selected",
+          "type": "Boolean",
+          "description": "Is applied to the active panel.",
+          "default": false
+        },
+        {
+          "name": "panel",
+          "type": "String",
+          "description": "The name of the panel for linking purposes."
+        }
+      ],
+      "events": [],
+      "slots": [
+        {
+          "name": "",
+          "description": "The contents of the panel."
+        }
+      ],
+      "cssProperties": []
+    },
+    {
+      "name": "fds-pagination",
+      "description": "Ford Design Systems standard paginator.",
+      "properties": [
+        {
+          "name": "label",
+          "type": "String",
+          "description": "A label for accessibility purposes.",
+          "default": "Pagination"
+        },
+        {
+          "name": "currentPage",
+          "type": "Number",
+          "description": "The current page of the paginator.",
+          "default": 1
+        },
+        {
+          "name": "totalPages",
+          "type": "Number",
+          "description": "The total number of pages for the paginator.",
+          "default": 1
+        },
+        {
+          "name": "desktopBreakpoint",
+          "type": "String",
+          "description": "The point, in pixels, where the paginator displays it's desktop version.",
+          "default": "768"
+        },
+        {
+          "name": "truncate",
+          "type": "Boolean",
+          "description": "Determines if the paginator should be truncated.",
+          "default": null
+        },
+        {
+          "name": "truncatedLastOnly",
+          "type": "Boolean",
+          "description": "Determines if only the ending should be truncated.",
+          "default": null
+        },
+        {
+          "name": "truncatedFirstOnly",
+          "type": "Number",
+          "description": "Determines if only the beginning should be truncated.",
+          "default": null
+        },
+        {
+          "name": "brand",
+          "type": "String",
+          "description": "Handles brand for LDS",
+          "default": "ford"
+        }
+      ],
+      "events": [
+        {
+          "name": "fds-pagination-item-clicked",
+          "description": "Fired anytime a pagination item is clicked"
+        }
+      ],
+      "slots": [],
+      "cssProperties": []
+    }
+  ]
+}

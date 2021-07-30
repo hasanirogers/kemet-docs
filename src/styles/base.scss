@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --kemet-color-black-25: rgba(0,0,0,0.25);
+  --kemet-color-black-50: rgba(0,0,0,0.5);
+  --kemet-color-black-75: rgba(0,0,0,0.75);
+
+  --docs-text: var(--kemet-color-black);
+  --docs-background: var(--kemet-color-white-rich);
+  --docs-card-background: var(--kemet-color-white);
+  --docs-link-color: var(--kemet-color-link);
+  --docs-code-color: #303030;
+  --docs-code-background: var(--kemet-color-white);
+  --docs-header-font: 'Open Sans', sans-serif;
+  --docs-box-shadow1: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+  --docs-box-shadow2: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 2rem 2rem 0 rgba(0, 0, 0, 0.1), 0 3rem 3rem 0 rgba(0, 0, 0, 0.15);
+  --docs-box-shadow3: 0 1.1rem 1.1rem 0 rgba(0, 0, 0, 0.1), 0 2.1rem 2.1rem 0 rgba(0, 0, 0, 0.1), 0 3.2rem 3.2rem 0 rgba(0, 0, 0, 0.15);
+}
+
+html[theme="dark"] {
+  --docs-text: var(--fds-color--white);
+  --docs-background: var(--fds-color--black);
+  --docs-card-background: var(--fds-color--tertiary);
+  --docs-link-color: var(--fds-color--white);
+  --docs-code-color: var(--fds-color--white);
+  --docs-code-background: var(--fds-color--tertiary);
+}
+
+html[brand="lincoln"] {
+  --docs-header-font: var(--fds-font--miller);
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--docs-text);
+  background: var(--docs-background);
+}
+
+a {
+  color: var(--docs-link-color);
+  text-decoration: none;
+}
+
+p {
+  margin: 2rem 0;
+  line-height: 2;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--docs-header-font);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  margin: 3rem 0 0 0;
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1rem;
+  border: 1px solid var(--kemet-color-black-25);
+}
+
+td:first-child {
+  white-space: nowrap;
+}
+
+code {
+  color: var(--docs-link-color);
+  padding: 4px 8px;
+  background: var(--kemet-color-white);
+}
+
+body > kemet-drawer {
+  display: block;
+  --kemet-drawer-width: 80vw;
+  --kemet-drawer-color: var(--kemet-color-white);
+  --kemet-drawer-background: var(--kemet-color-primary);
+}
+
+body > kemet-drawer > [slot="content"] {
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+body > kemet-drawer > [slot="content"] > div {
+  display: grid;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media only screen and (min-width: 768px) {
+  body > kemet-drawer > [slot="content"] > div {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
+
+body > kemet-modal {
+  z-index: 999;
+  display: block;
+  text-align: center;
+  padding-top: 12rem;
+  background-color: rgba(0,0,0,0.75);
+}
+
+body > kemet-modal > * {
+  display: inline-block;
+  margin: auto;
+}

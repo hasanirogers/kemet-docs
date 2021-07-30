@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="Description" content="{{ page.excerpt | default: site.description }}">
+    {%if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+    {%endif %}
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/styles/docs.css' | relative_url }}" />
+    <title>{{ page.title | default: site.title }}</title>
+    <script>
+      if (!window.customElements) {
+        document.write('<!--');
+      }
+    </script>
+    <script src="{{ '/assets/javascript/webcomponentsjs/custom-elements-es5-adapter.js' | relative_url }}"></script>
+    <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
+  </head>
+  <body class="body body--{{page.slug}}">

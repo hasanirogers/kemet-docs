@@ -1,0 +1,37 @@
+# meta
+title: "FDS Docs"
+email: hasani.rogers@vmlyr.com
+description: The FDS documentation site.
+url: "https://pages.github.ford.com/SWX/fds-next-generation"
+github_username: hroger29
+host: 0.0.0.0
+
+# build
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'rouge-highlighter'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+collections:
+  guides:
+    output: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - package-lock.json
+  - package.json
+include: [_pages]
+
+# algolia
+algolia:
+  application_id: XLA1JBHK2M
+  index_name: prod_FDSDOCS
