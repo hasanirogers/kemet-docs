@@ -20,7 +20,7 @@ class DocsSearch extends LitElement {
 
         :host([has-searched]) section {
           border-radius: 0.4rem;
-          background-color: var(--fds-color--white);
+          background-color: var(--kemet-color-white);
         }
 
         a {
@@ -29,14 +29,14 @@ class DocsSearch extends LitElement {
 
         p {
           margin: 0.5rem 0;
-          font-size: var(--fds-type__size--body2);
-          color: var(--fds-color--black);
+          font-size: 1rem;
+          color: var(--kemet-color-black);
         }
 
         h2 {
           margin: 0;
           color: var(--kemet-color-primary);
-          font-size: var(--fds-type__size--title3);
+          font-size: 2rem;
         }
 
         form {
@@ -59,7 +59,7 @@ class DocsSearch extends LitElement {
 
         form circle,
         form line {
-          stroke: var(--fds-color--black)
+          stroke: var(--kemet-color-black)
         }
 
         .articles {
@@ -70,6 +70,10 @@ class DocsSearch extends LitElement {
         }
 
         article {
+          padding: 2rem;
+        }
+
+        .no-results {
           padding: 2rem;
         }
       `
@@ -133,7 +137,7 @@ class DocsSearch extends LitElement {
     }
 
     const searchTerm = this.shadowRoot.querySelector('form input').value;
-    const client = algoliasearch('XLA1JBHK2M', 'c9b7778aec95c0b02b84c2f7db46accb');
+    const client = algoliasearch('0KZA0STEIH', '3ad56ea7943a825570b1f63d5b859f70');
     const index = client.initIndex('prod_KEMETUIDOCS');
     const attributes = [
       'headings',
@@ -178,7 +182,7 @@ class DocsSearch extends LitElement {
     }
 
     if (this.hasSearched) {
-      return html`<p>What was that? Try searching again.</p>`;
+      return html`<p class="no-results">What was that? Try searching again.</p>`;
     }
 
     return null;

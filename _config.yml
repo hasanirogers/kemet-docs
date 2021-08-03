@@ -33,5 +33,5 @@ include: [_pages]
 
 # algolia
 algolia:
-  application_id: XLA1JBHK2M
-  index_name: prod_FDSDOCS
+  application_id: 0KZA0STEIH
+  index_name: prod_KEMETUIDOCS

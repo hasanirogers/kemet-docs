@@ -180,7 +180,7 @@ class DocsHeader extends LitElement {
 
   // eslint-disable-next-line class-methods-use-this
   showSearchModal() {
-    const modal = document.querySelector('kemet-modal');
+    const modal = document.querySelector('body > kemet-modal');
     const searchInput = modal.querySelector('docs-search').shadowRoot.querySelector('input');
 
     modal.opened = true;

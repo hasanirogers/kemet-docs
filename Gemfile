@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-algolia', group: :jekyll_plugins
+gem "jekyll", "~> 4.2.0"
+
+group :jekyll_plugins do
+  gem 'jekyll-algolia'
+end
