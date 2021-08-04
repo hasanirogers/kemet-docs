@@ -22,9 +22,11 @@
   "dependencies": {
     "algoliasearch": "^4.9.1",
     "highlight.js": "^11.1.0",
-    "kemet-ui": "0.0.3",
+    "kemet-ui": "0.0.5",
     "lit": "^2.0.0-rc.2",
-    "ts-dedent": "^2.0.0"
+    "ts-dedent": "^2.0.0",
+    "dotenv": "^10.0.0",
+    "ssh2-sftp-client": "^6.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -34,10 +36,12 @@
   },
   "prettier": "@open-wc/prettier-config",
   "scripts": {
+    "deploy": "node deploy.js",
     "start": "rollup -c && bundle exec jekyll serve",
     "watch": "rollup -c --watch",
     "build": "rollup -c && bundle exec jekyll build",
-    "rollup": "rollup -c",
+    "build:site": "bundle exec jekyll build",
+    "build:assets": "rollup -c",
     "lint:eslint": "eslint src/** --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
     "lint:prettier": "prettier \"src/**/*.js\" --check --ignore-path .gitignore",
