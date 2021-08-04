@@ -2,7 +2,7 @@
 layout: default
 slug: popover
 title: "Popover | Kemet UI"
-permalink: /components/popover
+permalink: /components/popover/
 ---
 
 # Popover

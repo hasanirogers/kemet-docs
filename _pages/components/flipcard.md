@@ -2,7 +2,7 @@
 layout: default
 slug: flipcard
 title: "Flipcard | Kemet UI"
-permalink: /components/flipcard
+permalink: /components/flipcard/
 ---
 
 # Flipcard

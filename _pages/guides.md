@@ -2,7 +2,7 @@
 layout: guides
 slug: guides
 title: "Guides"
-permalink: /guides
+permalink: /guides/
 ---
 
 {:.fds-type--title1}

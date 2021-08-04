@@ -2,7 +2,7 @@
 layout: default
 slug: zurb-foundation
 title: "Zurb Foundation Templates | Kemet UI"
-permalink: /templates/zurb-foundation
+permalink: /templates/zurb-foundation/
 ---
 
 # Zurb Foundation Templates

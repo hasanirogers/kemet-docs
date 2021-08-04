@@ -2,7 +2,7 @@
 layout: default
 slug: carousel
 title: "Carousel | Kemet UI"
-permalink: /components/carousel
+permalink: /components/carousel/
 ---
 
 # Carousel

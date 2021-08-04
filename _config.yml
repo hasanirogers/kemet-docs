@@ -1,9 +1,9 @@
 # meta
-title: "FDS Docs"
-email: hasani.rogers@vmlyr.com
-description: The FDS documentation site.
-url: "https://pages.github.ford.com/SWX/fds-next-generation"
-github_username: hroger29
+title: "Kemet UI"
+email: hasani.rogers@gmail.com
+description: The Kemet UI documentation site.
+url: "https://kemet.dev"
+github_username: hasanirogers
 host: 0.0.0.0
 
 # build

@@ -2,7 +2,7 @@
 layout: default
 slug: scroll-link
 title: "Scroll Link | Kemet UI"
-permalink: /components/scroll-link
+permalink: /components/scroll-link/
 ---
 
 # Scroll Link

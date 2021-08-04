@@ -2,7 +2,7 @@
 layout: default
 slug: examples
 title: "Style Examples"
-permalink: /styles/examples
+permalink: /styles/examples/
 ---
 
 # Style Examples

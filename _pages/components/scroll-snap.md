@@ -2,7 +2,7 @@
 layout: default
 slug: scroll-snap
 title: "Scroll Snap | Kemet UI"
-permalink: /components/scroll-snap
+permalink: /components/scroll-snap/
 ---
 
 # Scroll Snap

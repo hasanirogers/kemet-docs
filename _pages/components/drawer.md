@@ -2,7 +2,7 @@
 layout: default
 slug: drawer
 title: "Drawer | Kemet UI"
-permalink: /components/drawer
+permalink: /components/drawer/
 ---
 
 # Drawer

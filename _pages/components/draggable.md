@@ -2,7 +2,7 @@
 layout: default
 slug: draggable
 title: "Draggable | Kemet UI"
-permalink: /components/draggable
+permalink: /components/draggable/
 ---
 
 # Draggable

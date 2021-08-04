@@ -2,7 +2,7 @@
 layout: default
 slug: about
 title: "About Styles"
-permalink: /styles/about
+permalink: /styles/about/
 ---
 
 {:#intro}

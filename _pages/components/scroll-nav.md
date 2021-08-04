@@ -2,7 +2,7 @@
 layout: default
 slug: scroll-nav
 title: "Scroll Nav | Kemet UI"
-permalink: /components/scroll-nav
+permalink: /components/scroll-nav/
 ---
 
 # Scroll Nav

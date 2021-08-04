@@ -2,7 +2,7 @@
 layout: default
 slug: ratio
 title: "Ratio | Kemet UI"
-permalink: /components/ratio
+permalink: /components/ratio/
 ---
 
 # Ratio

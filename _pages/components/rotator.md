@@ -2,7 +2,7 @@
 layout: default
 slug: rotator
 title: "Rotator | Kemet UI"
-permalink: /components/rotator
+permalink: /components/rotator/
 ---
 
 # Rotator

@@ -2,7 +2,7 @@
 layout: default
 slug: tabs
 title: "Tabs | Kemet UI"
-permalink: /components/tabs
+permalink: /components/tabs/
 ---
 
 # Tabs

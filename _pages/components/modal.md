@@ -2,7 +2,7 @@
 layout: default
 slug: modal
 title: "Modal | Kemet UI"
-permalink: /components/modal
+permalink: /components/modal/
 ---
 
 # Modal

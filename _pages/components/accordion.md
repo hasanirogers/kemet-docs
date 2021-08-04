@@ -2,7 +2,7 @@
 layout: default
 slug: accordion
 title: "Accordion | Kemet UI"
-permalink: /components/accordion
+permalink: /components/accordion/
 ---
 
 # Accordion
