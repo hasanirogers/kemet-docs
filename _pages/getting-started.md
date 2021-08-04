@@ -2,7 +2,7 @@
 layout: default
 slug: getting-started
 title: "Getting Started"
-permalink: /getting-started
+permalink: /getting-started/
 ---
 
 # Getting Started
