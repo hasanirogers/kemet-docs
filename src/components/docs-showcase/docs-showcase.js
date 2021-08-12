@@ -25,6 +25,12 @@ class DocsShowcase extends LitElement {
           line-height: 2;
           background: transparent;
         }
+
+        .hljs-regexp,
+        .hljs-string,
+        .hljs-meta .hljs-string {
+          color: var(--docs-hljs-blue);
+        }
       `
     ];
   }

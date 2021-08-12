@@ -8,10 +8,10 @@ export const stylesBase = css`
     width: 100%;
     height: 4rem;
     padding: 0.8rem 1.2rem;
-    border: 0.1rem solid var(--fds-color--disabled-dark);
     border-radius: 0.4rem;
     transition: box-shadow .3s ease;
-    background-color: var(--kemet-color-white);
+    border: 1px solid var(--docs-search-foreground);
+    background-color: var(--docs-search-background);
   }
 
   table {

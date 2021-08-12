@@ -20,7 +20,7 @@ class DocsSearch extends LitElement {
 
         :host([has-searched]) section {
           border-radius: 0.4rem;
-          background-color: var(--kemet-color-white);
+          background-color: var(--docs-search-background);
         }
 
         a {
@@ -30,7 +30,7 @@ class DocsSearch extends LitElement {
         p {
           margin: 0.5rem 0;
           font-size: 1rem;
-          color: var(--kemet-color-black);
+          color: var(--docs-search-foreground);
         }
 
         h2 {
@@ -45,6 +45,9 @@ class DocsSearch extends LitElement {
 
         form input[type="text"] {
           padding-left: 5rem;
+        }
+
+        :host([has-searched]) form input[type="text"] {
           border: 0;
         }
 
@@ -59,7 +62,7 @@ class DocsSearch extends LitElement {
 
         form circle,
         form line {
-          stroke: var(--kemet-color-black)
+          stroke: var(--docs-search-foreground)
         }
 
         .articles {

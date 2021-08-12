@@ -35,7 +35,18 @@ class DocsThemeIcon extends LitElement {
 
         button {
           border: 0;
+          cursor: pointer;
           background: transparent;
+        }
+
+        .sun path {
+          fill: var(--docs-header-foreground) !important;
+          stroke: var(--docs-header-foreground) !important;
+        }
+
+        .sun circle {
+          fill: var(--docs-header-foreground) !important;
+          stroke: transparent !important;
         }
       `
     ]

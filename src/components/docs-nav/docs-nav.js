@@ -16,6 +16,10 @@ class DocsNav extends LitElement {
           text-decoration: none;
         }
 
+        span {
+          color: var(--kemet-color-white);
+        }
+
         nav {
           position: fixed;
           height: 100%;
@@ -105,7 +109,11 @@ class DocsNav extends LitElement {
           }
 
           :host([location="desktop"]) svg {
-            fill: var(--kemet-color-black);
+            fill: var(--docs-accordion-color);
+          }
+
+          :host([location="desktop"]) span {
+            color: var(--docs-accordion-color);
           }
         }
       `

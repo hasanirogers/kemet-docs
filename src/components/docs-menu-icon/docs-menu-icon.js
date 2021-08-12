@@ -7,7 +7,6 @@ class DocsMenuIcon extends LitElement {
       css`
         :host {
           display: block;
-          cursor: pointer;
         }
 
         svg {
@@ -17,11 +16,12 @@ class DocsMenuIcon extends LitElement {
 
         button {
           border: 0;
+          cursor: pointer;
           background: transparent;
         }
 
         polygon {
-          fill: var(--kemet-color-black-50);
+          fill: var(--docs-hamburger-color);
         }
       `
     ]

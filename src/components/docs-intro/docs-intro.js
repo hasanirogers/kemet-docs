@@ -17,11 +17,11 @@ class DocsIntro extends LitElement {
 
         h2 {
           margin-top: 0;
-          color: var(--kemet-color-black-75);
+          color: var(--docs-intro-subtitle-color);
         }
 
         h2 span {
-          color: var(--kemet-color-black-25);
+          color: var(--docs-intro-bracket-color);
         }
 
         svg {
@@ -32,11 +32,11 @@ class DocsIntro extends LitElement {
         }
 
         code {
-          color: var(--kemet-color-black-75);
+          color: var(--docs-code-color);
           font-size: 1rem;
           display: inline-block;
           padding: 1rem 2rem;
-          background: var(--kemet-color-white);
+          background: var(--docs-code-background);
         }
 
         section {

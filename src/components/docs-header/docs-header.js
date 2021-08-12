@@ -20,7 +20,8 @@ class DocsHeader extends LitElement {
           z-index: 999;
           padding: 1rem;
           box-sizing: border-box;
-          background: var(--kemet-color-white);
+          color: var(--docs-header-foreground);
+          background: var(--docs-header-background);
         }
 
         @media only screen and (min-width: 768px) {
@@ -30,7 +31,7 @@ class DocsHeader extends LitElement {
         }
 
         a {
-          color: var(--kemet-color-black);
+          color: var(--docs-header-foreground);
           text-decoration: none;
         }
 
@@ -57,13 +58,11 @@ class DocsHeader extends LitElement {
         .search {
           font-size: 1rem;
           box-sizing: border-box;
-          color: var(--kemet-color-primary);
           width: 100%;
           height: 50px;
           padding: 0.8rem 1.2rem;
-          border: 0.1rem solid var(--kemet-color-black-50);
-          border-radius: 0.4rem;
-          background-color: rgba(255, 255, 254, 0.7);
+          border: 1px solid var(--docs-header-foreground);
+          border-radius: 0.5rem;
           transition: box-shadow 0.3s ease 0s;
         }
 
@@ -86,11 +85,13 @@ class DocsHeader extends LitElement {
             display: flex;
             gap: 0.5rem;
             align-items: center;
+            text-shadow: 1px 1px var(--docs-header-foreground);
           }
 
           .logo svg {
             width: 48px;
             height: 48px;
+            stroke: var(--docs-header-foreground);
           }
 
           .search {
@@ -103,12 +104,12 @@ class DocsHeader extends LitElement {
 
           .search line,
           .search circle {
-            stroke: var(--kemet-color-black-50);
+            stroke: var(--docs-header-foreground);
           }
 
           .search svg {
             position: absolute;
-            left: 1rem;
+            left: 0.75rem;
             width: 32px;
             height: 32px;
             top: 50%;
@@ -136,9 +137,14 @@ class DocsHeader extends LitElement {
             fill-opacity: 1;
           }
 
+          .logo svg,
           .github path,
           .storybook defs path {
-            fill: var(--kemet-color-black-50);
+            fill: var(--docs-header-foreground);
+          }
+
+          .storybook .inner-s {
+            fill: var(--docs-header-background);
           }
         }
       `
