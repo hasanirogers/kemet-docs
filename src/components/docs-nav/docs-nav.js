@@ -192,6 +192,7 @@ class DocsNav extends LitElement {
         <a href="${this.baseurl}/components/draggable">Draggable</a>
         <a href="${this.baseurl}/components/drawer">Drawer</a>
         <a href="${this.baseurl}/components/flipcard">Flipcard</a>
+        <a href="${this.baseurl}/components/icon">Icon</a>
         <a href="${this.baseurl}/components/modal">Modal</a>
         <a href="${this.baseurl}/components/popover">Popover</a>
         <a href="${this.baseurl}/components/ratio">Ratio</a>
@@ -199,6 +200,7 @@ class DocsNav extends LitElement {
         <a href="${this.baseurl}/components/scroll-link">Scroll Link</a>
         <a href="${this.baseurl}/components/scroll-nav">Scroll Nav</a>
         <a href="${this.baseurl}/components/scroll-snap">Scroll Snap</a>
+        <a href="${this.baseurl}/components/svgs">SVGs</a>
         <a href="${this.baseurl}/components/tabs">Tabs</a>
 
         <h2>Templates</h2>
