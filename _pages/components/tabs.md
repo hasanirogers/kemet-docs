@@ -30,11 +30,11 @@ import 'kemet-ui/dist/components/kemet-tab-panel.js'
 
 ```html
 <kemet-tabs selected="one">
-  <nav slot="links">
+  <div slot="links" role="tablist" aria-label="Tabs">
     <kemet-tab link="one">One</kemet-tab>
     <kemet-tab link="two">Two</kemet-tab>
     <kemet-tab link="three">Three</kemet-tab>
-  </nav>
+  </div>
   <section slot="panels">
     <kemet-tab-panel panel="one">Panel One</kemet-tab-panel>
     <kemet-tab-panel panel="two">Panel Two</kemet-tab-panel>
@@ -46,7 +46,7 @@ import 'kemet-ui/dist/components/kemet-tab-panel.js'
 {:kemet-margin-bottom="tiny:normal"}
 ## Storybook
 
-[View Tabs on Storybook](https://storybook.kemet.dev/?path=/story/components-kemet-tabs--tabs)
+[View Tabs on Storybook](https://storybook.kemet.dev/?path=/story/components-kemet-tabs--select-by-name)
 
 
 {:kemet-margin-bottom="tiny:normal"}
@@ -54,12 +54,12 @@ import 'kemet-ui/dist/components/kemet-tab-panel.js'
 
 ### Horizontal
 <docs-showcase>
-<kemet-tabs class="horizontal">
-  <nav slot="links">
+<kemet-tabs class="horizontal" panel-effect="slide">
+  <div slot="links" role="tablist" aria-label="Tabs">
     <kemet-tab link="one">One</kemet-tab>
     <kemet-tab link="two">Two</kemet-tab>
     <kemet-tab link="three">Three</kemet-tab>
-  </nav>
+  </div>
   <section slot="panels">
     <kemet-tab-panel panel="one">Panel One</kemet-tab-panel>
     <kemet-tab-panel panel="two">Panel Two</kemet-tab-panel>
@@ -70,12 +70,12 @@ import 'kemet-ui/dist/components/kemet-tab-panel.js'
 
 ### Vertical
 <docs-showcase>
-<kemet-tabs selected="two" class="vertical">
-  <nav slot="links">
+<kemet-tabs selected="two" class="vertical" panel-effect="fade">
+  <div slot="links" role="tablist" aria-label="Tabs">
     <kemet-tab link="one">One</kemet-tab>
     <kemet-tab link="two">Two</kemet-tab>
     <kemet-tab link="three">Three</kemet-tab>
-  </nav>
+  </div>
   <section slot="panels">
     <kemet-tab-panel panel="one">Panel One</kemet-tab-panel>
     <kemet-tab-panel panel="two">Panel Two</kemet-tab-panel>
