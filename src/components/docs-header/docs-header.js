@@ -44,6 +44,25 @@ class DocsHeader extends LitElement {
           cursor: pointer;
         }
 
+        .banner {
+          color: #d97706;
+          margin: -1rem -1rem 1rem -1rem;
+          background-color: #ffe8cc;
+        }
+
+        .banner a {
+          color: #d97706;
+          font-weight: bold;
+        }
+
+        .banner > div {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+        }
+
         .mobile {
           display: grid;
           gap: 1rem;
@@ -162,6 +181,16 @@ class DocsHeader extends LitElement {
 
   render() {
     return html`
+      <section class="banner">
+        <div>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </span>
+          <span>You are viewing obsolete documentation. <a href="https://storybook.kemet.dev">View the current docs in Storybook.</a></span>
+        </div>
+      </section>
       <nav class="mobile">
         <docs-search-icon @click="${() => this.showSearchModal()}"></docs-search-icon>
         <docs-theme-icon></docs-theme-icon>
