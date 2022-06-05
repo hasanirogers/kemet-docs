@@ -1,8 +1,8 @@
 ---
-layout: default
-slug: getting-started
-title: "Getting Started"
-permalink: /getting-started/
+layout: layouts/default.njk
+title: Kemet UI | Getting Started
+permalink: "getting-started/"
+description: You can install Kemet UI via NPM or a CDN. You can also use Kemet UI in any JavaScript library. This guide shows you how.
 ---
 
 # Getting Started
@@ -16,7 +16,6 @@ Install the package with the following command: `npm install kemet-ui`. Once ins
 
 ```javascript
 import 'kemet-ui'; // all components
-import 'kemet-ui/dist/components/kemet-the-name-of-component.js'; // specific component
 import 'kemet-ui/dist/styles/kemet.core.css'; // core styles
 import 'kemet-ui/dist/styles/kemet.components.css'; // component styles
 ```
@@ -44,15 +43,15 @@ Kemet UI components are Web Components. New to Web Components? Using a Web Compo
 Each component tag name and attributes will vary. Be sure to checkout the documentation for each component for specifics.
 
 
-## Frameworks
+## Libraries
 
 ### React
 
-[React doesn't play nice with Web Components](https://custom-elements-everywhere.com/#react). Fortunately you can use a wrapper to get Kemet UI components to work in React. For more information checkout the [Wrapping Web Components for React]({{ site.baseurl }}/guides/using-wrappers-react) guide.
+[React doesn't play nice with Web Components](https://custom-elements-everywhere.com/#react). Fortunately you can use a wrapper to get Kemet UI components to work in React. For more information checkout the [React](libraries/react/) guide.
 
 ### Angular
 
-You'll need to configure custom elements schema on your app's ngModule to use Web Components. It's super easy. Read the [Web Components with Angular]({{ site.baseurl }}/guides/web-components-with-angular) guide for more info.
+You'll need to configure custom elements schema on your app's ngModule to use Web Components. It's super easy. Read the [Angular](/libraries/angular) guide for more info.
 
 ### Vue
 
@@ -63,6 +62,6 @@ Using Web Components in Vue is as simple as writing standard html. Just be sure 
 ```
 
 
-## Storybook
+## Docs
 
-Storybook is a great way to learn how a component works. Every time a new version of Kemet UI is published Storybook is automatically updated. [Checkout Storybook](https://storybook.kemet.dev) and get a feel for each component's controls.
+[The docs are written in Storybook](https://storybook.kemet.dev). Storybook allows you to configure components and generate the necessary code to include them.

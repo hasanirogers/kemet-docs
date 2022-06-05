@@ -1,33 +1,23 @@
 {
   "name": "kemet-docs",
   "version": "1.0.0",
-  "description": "The documentation app for Kemet UI.",
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "build": "rollup -c && npx @11ty/eleventy",
+    "start": "concurrently \"npx @11ty/eleventy --serve\" \"rollup -c --watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasanirogers/kemet-docs.git"
+  },
   "keywords": [],
-  "author": "Hasani Rogers <hasani.rogers@gmail.com>",
-  "devDependencies": {
-    "@open-wc/eslint-config": "4.2.0",
-    "@open-wc/prettier-config": "1.1.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "@webcomponents/webcomponentsjs": "2.5.0",
-    "eslint": "7.21.0",
-    "rollup": "^2.50.4",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-minify-html-literals": "^1.2.6",
-    "rollup-plugin-scss": "^3.0.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.34.0"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasanirogers/kemet-docs/issues"
   },
-  "dependencies": {
-    "algoliasearch": "^4.9.1",
-    "dotenv": "^10.0.0",
-    "highlight.js": "^11.1.0",
-    "kemet-ui": "^0.2.0",
-    "lit": "^2.0.0-rc.2",
-    "ssh2-sftp-client": "^6.0.1",
-    "ts-dedent": "^2.0.0"
-  },
+  "homepage": "https://github.com/hasanirogers/kemet-docs#readme",
   "eslintConfig": {
     "extends": [
       "@open-wc/eslint-config",
@@ -35,16 +25,27 @@
     ]
   },
   "prettier": "@open-wc/prettier-config",
-  "scripts": {
-    "deploy": "node deploy.js",
-    "start": "rollup -c && bundle exec jekyll serve",
-    "watch": "rollup -c --watch",
-    "build": "rollup -c && bundle exec jekyll build",
-    "build:site": "bundle exec jekyll build",
-    "build:assets": "rollup -c",
-    "lint:eslint": "eslint src/** --ignore-path .gitignore",
-    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
-    "lint:prettier": "prettier \"src/**/*.js\" --check --ignore-path .gitignore",
-    "format:prettier": "prettier \"src/**/*.js\" --write --ignore-path .gitignore"
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@open-wc/eslint-config": "^7.0.0",
+    "@open-wc/prettier-config": "^1.1.0",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "concurrently": "^7.2.1",
+    "eslint": "^8.16.0",
+    "rollup": "^2.75.4",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "kemet-ui": "^1.0.1",
+    "lit": "^2.2.5",
+    "markdown-it-attrs": "^4.1.4",
+    "ssh2-sftp-client": "^8.1.0"
   }
 }
