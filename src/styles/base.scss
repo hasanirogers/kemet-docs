@@ -110,10 +110,21 @@ td:first-child {
   white-space: nowrap;
 }
 
+pre {
+  box-shadow: var(--docs-box-shadow1);
+  background: var(--docs-code-background) !important;
+}
+
 code {
-  color: var(--docs-code-color);
+  color: var(--docs-code-color) !important;
   padding: 4px 8px;
-  background: var(--docs-code-background);
+  text-shadow: none !important;
+  background: var(--docs-code-background) !important;
+}
+
+pre code {
+  display: block;
+  line-height: 1.5;
 }
 
 body > kemet-drawer {

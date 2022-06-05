@@ -1,0 +1,15 @@
+{% include 'partials/head.html' %}
+  <docs-header></docs-header>
+  <kemet-drawer effect="scale" side="right">
+    <nav slot="navigation">
+      <docs-nav location="mobile"></docs-nav>
+    </nav>
+    <section slot="content">
+      <div>
+        <docs-nav location="desktop"></docs-nav>
+        <article>{{ content | safe }}</article>
+      </div>
+      <docs-footer></docs-footer>
+    </section>
+  </kemet-drawer>
+{% include 'partials/footer.html' %}

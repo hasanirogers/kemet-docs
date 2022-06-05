@@ -13,12 +13,10 @@ export const stylesBase = css`
     border: 1px solid var(--docs-search-foreground);
     background-color: var(--docs-search-background);
   }
-
   table {
     width: 99%;
     border-collapse: collapse;
   }
-
   th,
   td {
     font-size: 1rem;
@@ -26,17 +24,14 @@ export const stylesBase = css`
     vertical-align: top;
     padding: 0.5rem;
   }
-
   td:first-child {
     white-space: nowrap;
   }
-
   .select-box {
     position: relative;
     background: #ffffff;
     box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
   }
-
   .select-box select {
     cursor: pointer;
     font-size: 1.6rem;
@@ -48,7 +43,6 @@ export const stylesBase = css`
     background-image: none;
     background-color: transparent;
   }
-
   .select-box::after {
     content: "╲╱";
     font-size: 0.5rem;

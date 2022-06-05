@@ -7,24 +7,23 @@ import commonjs from '@rollup/plugin-commonjs';
 
 const copyConfig = {
   targets: [
-    { src: 'node_modules/@webcomponents/webcomponentsjs', dest: 'assets/javascript'},
-    { src: 'node_modules/highlight.js/styles/*.css', dest: 'assets/styles/highlightjs'}
+    { src: 'src/assets', dest: '_site'},
   ]
 };
 
 const scssConfig = {
   // eslint-disable-next-line global-require
   sass: require('sass'),
-  output: 'assets/styles/docs.css',
+  output: '_site/assets/styles/docs.css',
   watch: ['src/styles'],
 };
 
 const config = {
-  input: 'src/index.js',
+  input: 'src/javascript/index.js',
   output: {
-    file: 'assets/javascript/docs.js',
+    file: '_site/assets/javascript/docs.js',
     name: 'docs',
-    format: 'iife',
+    format: 'esm',
   },
   plugins: [
     resolve(),
