@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c && npx @11ty/eleventy",
+    "deploy": "node deploy.js",
     "start": "concurrently \"npx @11ty/eleventy --serve\" \"rollup -c --watch\""
   },
   "repository": {
