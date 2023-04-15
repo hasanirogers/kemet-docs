@@ -15,12 +15,9 @@ const copyConfig = {
 };
 
 const scssConfig = {
-  // eslint-disable-next-line global-require
-  // sass: require('sass'),
-  // output: '_site/assets/styles/docs.css',
   watch: ['src/styles'],
   output: function (styles, styleNodes) {
-    writeFileSync('_site/assets/styles/docs.css', styles)
+    writeFileSync('_site/assets/docs.css', styles)
   },
   includePaths: [path.resolve('node_modules')]
 };
@@ -28,7 +25,7 @@ const scssConfig = {
 const config = {
   input: 'src/javascript/index.js',
   output: {
-    file: '_site/assets/javascript/docs.js',
+    file: '_site/assets/docs.js',
     name: 'docs',
     format: 'esm',
   },
