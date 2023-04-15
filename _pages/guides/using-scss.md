@@ -34,7 +34,7 @@ Notice that in `index.html` we're not using tiny, small, medium, large, or huge.
 This is because this app has overwritten the breakpoint map. Since Kemet UI uses [Sass Modules](https://sass-lang.com/documentation/at-rules/use), to overwrite the variables we need to use the `with` keyword.
 
 ```scss
-@use 'kemet-ui/dist/styles/core/_config.scss' with (
+@use 'kemet-ui/dist/styles/shared/_config.scss' with (
   $breakpoints: (
     mobile: 0,
     tablet: 768px,
@@ -43,5 +43,5 @@ This is because this app has overwritten the breakpoint map. Since Kemet UI uses
 );
 ```
 
-This tells Sass to import the given file with the variables you've defined here instead in the library. You can overwrite any variable you want. To see a full list of configuration variables [checkout the docs](https://storybook.kemet.dev/?path=/story/styles-config--page).
+This tells Sass to import the given file with the variables you've defined here instead in the library. You can overwrite any variable you want. To see a full list of configuration variables [checkout the docs](https://storybook.kemet.dev/?path=/docs/styles-config--docs).
 

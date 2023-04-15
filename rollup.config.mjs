@@ -1,6 +1,9 @@
+import path from 'path';
+import { writeFileSync } from 'fs';
+
 import resolve from '@rollup/plugin-node-resolve';
-import { terser } from 'rollup-plugin-terser';
-import minifyHTML from 'rollup-plugin-minify-html-literals';
+import terser from '@rollup/plugin-terser';
+import minifyHTML from 'rollup-plugin-minify-html-literals-v3';
 import copy from 'rollup-plugin-copy';
 import scss from 'rollup-plugin-scss';
 import commonjs from '@rollup/plugin-commonjs';
@@ -13,9 +16,13 @@ const copyConfig = {
 
 const scssConfig = {
   // eslint-disable-next-line global-require
-  sass: require('sass'),
-  output: '_site/assets/styles/docs.css',
+  // sass: require('sass'),
+  // output: '_site/assets/styles/docs.css',
   watch: ['src/styles'],
+  output: function (styles, styleNodes) {
+    writeFileSync('_site/assets/styles/docs.css', styles)
+  },
+  includePaths: [path.resolve('node_modules')]
 };
 
 const config = {
