@@ -146,9 +146,16 @@ class DocsNav extends LitElement {
         <a href="${this.bareurl}/templates">Templates</a>
         <a href="https://github.com/hasanirogers/kemet-ui">GitHub</a>
         <a href="https://storybook.kemet.dev">Storybook Docs</a>
-        <h3>Libraries</h3>
-        <a href="${this.baseurl}/libraries/react">React</a>
-        <a href="${this.baseurl}/libraries/angular">Angular</a>
+        <h3>Integrations</h3>
+        <a href="${this.baseurl}/integrations/react">React</a>
+        <a href="${this.baseurl}/integrations/react-legacy">React (Legacy)</a>
+        <a href="${this.baseurl}/integrations/angular">Angular</a>
+        <a href="${this.baseurl}/integrations/vue">Vue</a>
+        <a href="${this.baseurl}/integrations/alpine">Alpine</a>
+        <a href="${this.baseurl}/integrations/next">Next</a>
+        <a href="${this.baseurl}/integrations/svelte">Svelte</a>
+        <a href="${this.baseurl}/integrations/lit">Lit</a>
+        <a href="${this.baseurl}/integrations/solid">Solid</a>
         <h3>Guides</h3>
         <a href="${this.baseurl}/guides/scss">Using SCSS</a>
         <a href="${this.baseurl}/guides/forms">Working with Forms</a>
