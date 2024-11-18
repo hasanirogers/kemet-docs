@@ -159,6 +159,7 @@ class DocsNav extends LitElement {
         <h3>Guides</h3>
         <a href="${this.baseurl}/guides/scss">Using SCSS</a>
         <a href="${this.baseurl}/guides/forms">Working with Forms</a>
+        <a href="${this.baseurl}/guides/using-jsx">Web Components and JSX</a>
       </nav>
     `;
   }
