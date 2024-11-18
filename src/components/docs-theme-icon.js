@@ -8,6 +8,7 @@ class DocsThemeIcon extends LitElement {
         :host {
           display: inline-block;
           cursor: pointer;
+          padding: 0 0.5rem;
         }
         svg {
           width: 24px;
@@ -18,7 +19,7 @@ class DocsThemeIcon extends LitElement {
           height: 32px;
         }
         path {
-          fill: var(--kemet-color-black-50);
+          fill: var(--kemet-color-primary);
         }
         .sun,
         :host([theme="dark"]) .moon {

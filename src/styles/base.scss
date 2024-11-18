@@ -58,7 +58,6 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--docs-text);
-  background: var(--docs-background);
 }
 
 a {
@@ -135,8 +134,7 @@ body > kemet-drawer {
 }
 
 body > kemet-drawer > [slot="content"] {
-  padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 body > kemet-drawer > [slot="content"] > div {
@@ -164,4 +162,32 @@ body > kemet-modal {
 body > kemet-modal > * {
   display: inline-block;
   margin: auto;
+}
+
+[slot="content"] > * {
+  position: relative;
+  z-index: 2;
+}
+
+[slot="content"] > .intro {
+  background-color: var(--docs-background);
+  background-image: url(/assets/images/kemet.png);
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 4rem;
+    background-size: 100% auto;
+  }
+
+  &::before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+  }
 }

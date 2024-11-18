@@ -6,7 +6,7 @@ class DocsIntroCards extends LitElement {
       css`
         :host {
           display: block;
-          margin: 1rem 0;
+          margin-top: 6rem;
         }
 
         section {
@@ -44,6 +44,8 @@ class DocsIntroCards extends LitElement {
 
         figure > span {
           display: inline-block;
+          width: 4rem;
+          text-align: center;
           padding: 1rem;
           border-radius: 50%;
           background-color: var(--kemet-color-primary);

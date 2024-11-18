@@ -78,17 +78,16 @@ class DocsHeader extends LitElement {
           }
 
           .logo {
+            color: var(--kemet-color-primary);
             font-size: 1.25rem;
             display: flex;
             gap: 0.5rem;
             align-items: center;
-            text-shadow: 1px 1px var(--docs-header-foreground);
           }
 
           .logo svg {
             width: 48px;
             height: 48px;
-            stroke: var(--docs-header-foreground);
           }
 
           .search {
@@ -115,7 +114,6 @@ class DocsHeader extends LitElement {
 
           .links {
             display: flex;
-            gap: 1rem;
             align-items: center;
           }
 
@@ -125,6 +123,14 @@ class DocsHeader extends LitElement {
 
           .links a:hover {
             color: var(--kemet-color-link);
+          }
+
+
+          .links a:not([href*=storybook]):not(:last-child)::after {
+            content: '|';
+            display: inline-block;
+            padding: 0 0.5rem;
+            opacity: 0.5;
           }
 
           .links svg {
@@ -143,7 +149,6 @@ class DocsHeader extends LitElement {
             fill-opacity: 1;
           }
 
-          .logo svg,
           .github path,
           .storybook defs path {
             fill: var(--docs-header-foreground);
@@ -180,7 +185,7 @@ class DocsHeader extends LitElement {
       <nav class="desktop">
         <a href="${this.baseurl}" class="logo">
           ${svgAnubis}
-          <span>Kemet UI</span>
+          <strong>Kemet UI</strong>
         </a>
         <div class="links">
           <a href="${this.baseurl}" title="Home">Home</a>

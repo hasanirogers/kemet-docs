@@ -7,7 +7,10 @@ class DocsIntro extends LitElement {
       css`
         :host {
           display: block;
+          position: relative;
+          z-index: 2;
         }
+
         h1 {
           font-size: 3rem;
           margin: 0;

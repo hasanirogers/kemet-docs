@@ -8,6 +8,8 @@ class DocsStartedButtons extends LitElement {
       css`
         :host {
           display: block;
+          position: relative;
+          z-index: 2;
         }
 
         section {
