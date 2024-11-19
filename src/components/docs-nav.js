@@ -11,12 +11,12 @@ class DocsNav extends LitElement {
         }
 
         a {
-          color: var(--kemet-color-white);
+          color: rgb(var(--kemet-color-white));
           text-decoration: none;
         }
 
         span {
-          color: var(--kemet-color-white);
+          color: rgb(var(--kemet-color-white));
         }
 
         nav {
@@ -75,13 +75,13 @@ class DocsNav extends LitElement {
 
         kemet-accordion[opened] button {
           margin-bottom: 1rem;
-          border-bottom: 1px solid var(--kemet-color-black-50);
+          border-bottom: 1px solid rgb(var(--kemet-color-black) / 50%);
         }
 
         .chevron svg {
           width: 32px;
           height: 32px;
-          fill: var(--kemet-color-white);
+          fill: rgb(var(--kemet-color-white));
           transform: rotate(90deg);
           transition: transform 300ms ease;
         }

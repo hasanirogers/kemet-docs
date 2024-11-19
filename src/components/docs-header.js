@@ -2,7 +2,7 @@ import { LitElement, css, html } from 'lit';
 import { svgAnubis } from '../static/svgs.js';
 import { stylesBase } from '../static/styles.js';
 
-import './docs-theme-icon.js';
+import './docs-polarity-icon.js';
 
 class DocsHeader extends LitElement {
   static get styles() {
@@ -78,7 +78,7 @@ class DocsHeader extends LitElement {
           }
 
           .logo {
-            color: var(--kemet-color-primary);
+            color: rgb(var(--kemet-color-primary));
             font-size: 1.25rem;
             display: flex;
             gap: 0.5rem;
@@ -118,11 +118,12 @@ class DocsHeader extends LitElement {
           }
 
           .links a {
+            color: rgb(var(--kemet-color-gray-500));
             transition: all 300ms ease;
           }
 
           .links a:hover {
-            color: var(--kemet-color-link);
+            color: rgb(var(--kemet-color-primary));
           }
 
 
@@ -179,7 +180,7 @@ class DocsHeader extends LitElement {
   render() {
     return html`
       <nav class="mobile">
-        <docs-theme-icon></docs-theme-icon>
+        <docs-polarity-icon></docs-polarity-icon>
         <docs-menu-icon></docs-menu-icon>
       </nav>
       <nav class="desktop">
@@ -193,7 +194,7 @@ class DocsHeader extends LitElement {
           <a href="${this.baseurl}/templates">Templates</a>
           <a href="https://github.com/hasanirogers/kemet-ui" title="GitHub">GitHub</a>
           <a href="https://storybook.kemet.dev" title="Storybook">Storybook Docs</a>
-          <docs-theme-icon size="desktop"></docs-theme-icon>
+          <docs-polarity-icon size="desktop"></docs-polarity-icon>
         </div>
       </nav>
     `;

@@ -6,7 +6,7 @@ class DocsDesignless extends LitElement {
     return [
       css`
         :host {
-          color: var(--kemet-color-white);
+          color: rgb(var(--kemet-color-white));
           display: block;
         }
         p {
@@ -22,7 +22,7 @@ class DocsDesignless extends LitElement {
           text-align: center;
           margin: 8rem -2rem;
           padding: 4rem 2rem 8rem 2rem;
-          background-color: var(--kemet-color-primary);
+          background-color: rgb(var(--kemet-color-primary));
         }
         @media only screen and (min-width: 768px) {
           section {
@@ -52,7 +52,7 @@ class DocsDesignless extends LitElement {
           height: 196px;
         }
         .designless1 {
-          fill: var(--kemet-color-white);
+          fill: rgb(var(--kemet-color-white));
         }
       `
     ]

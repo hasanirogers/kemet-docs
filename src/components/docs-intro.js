@@ -14,21 +14,25 @@ class DocsIntro extends LitElement {
         h1 {
           font-size: 3rem;
           margin: 0;
-          color: var(--kemet-color-primary);
+          color: var(--docs-text);
         }
+
         h2 {
           margin-top: 0;
           color: var(--docs-intro-subtitle-color);
         }
+
         h2 span {
           color: var(--docs-intro-bracket-color);
         }
+
         svg {
           width: 420px;
           height: 420px;
           margin: 1rem 0;
-          fill: var(--kemet-color-primary);
+          fill: var(--docs-primary-to-white);
         }
+
         code {
           color: var(--docs-code-color);
           font-size: 1rem;
@@ -36,6 +40,7 @@ class DocsIntro extends LitElement {
           padding: 1rem 2rem;
           background: var(--docs-code-background);
         }
+
         section {
           margin: 0 -2rem;
           text-align: center;

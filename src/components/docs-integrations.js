@@ -94,7 +94,7 @@ class DocsIntegrations extends LitElement {
         }
 
         a {
-          color: var(--kemet-color-primary);
+          color: rgb(var(--kemet-color-primary));
           text-decoration: none;
         }
       `

@@ -4,7 +4,7 @@ export const stylesBase = css`
   input[type="text"] {
     font-size: 1rem;
     box-sizing: border-box;
-    color: var(--kemet-color-primary);
+    color: rgb(var(--kemet-color-primary));
     width: 100%;
     height: 4rem;
     padding: 0.8rem 1.2rem;
