@@ -10,6 +10,7 @@ description: Kemet UI is a modern blueprint design system for building rich web 
   <docs-started-buttons></docs-started-buttons>
 </section>
 <section class="marketing">
+  <docs-integrations></docs-integrations>
   <docs-intro-cards></docs-intro-cards>
 </section>
 <section class="designless">

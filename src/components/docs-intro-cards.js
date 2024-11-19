@@ -7,6 +7,8 @@ class DocsIntroCards extends LitElement {
         :host {
           display: block;
           margin-top: 6rem;
+          padding: 4rem 2rem;
+          background: lightgray;
         }
 
         section {
