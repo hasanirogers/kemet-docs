@@ -8,7 +8,7 @@ class DocsIntroCards extends LitElement {
           display: block;
           margin-top: 6rem;
           padding: 4rem 2rem;
-          background: lightgray;
+          background: var(--docs-header-background);
         }
 
         section {
@@ -35,7 +35,7 @@ class DocsIntroCards extends LitElement {
           padding: 2rem;
           border-radius: 0.5rem;
           background-color: var(--docs-card-background);
-          box-shadow: var(--docs-box-shadow1);
+          box-shadow: var(--docs-box-shadow3);
         }
 
         figure img {
@@ -50,7 +50,7 @@ class DocsIntroCards extends LitElement {
           text-align: center;
           padding: 1rem;
           border-radius: 50%;
-          background-color: var(--kemet-color-primary);
+          background-color: rgb(var(--kemet-color-primary));
         }
       `
     ]

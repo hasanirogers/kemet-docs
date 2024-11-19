@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { svgMoon, svgSun } from '../static/svgs.js';
 
-class DocsThemeIcon extends LitElement {
+class DocsPolarityIcon extends LitElement {
   static get styles() {
     return [
       css`
@@ -19,13 +19,13 @@ class DocsThemeIcon extends LitElement {
           height: 32px;
         }
         path {
-          fill: var(--kemet-color-primary);
+          fill: rgb(var(--kemet-color-primary));
         }
         .sun,
-        :host([theme="dark"]) .moon {
+        :host([polarity="dark"]) .moon {
           display: none;
         }
-        :host([theme="dark"]) .sun {
+        :host([polarity="dark"]) .sun {
           display: inline-block;
         }
         button {
@@ -47,7 +47,7 @@ class DocsThemeIcon extends LitElement {
 
   static get properties() {
     return {
-      theme: {
+      polarity: {
         type: String,
         reflect: true
       },
@@ -62,44 +62,44 @@ class DocsThemeIcon extends LitElement {
     super();
 
     this.size = 'mobile';
-    this.theme = localStorage.getItem('kemet-docs-theme') ? localStorage.getItem('kemet-docs-theme') : 'light';
+    this.polarity = localStorage.getItem('kemet-docs-polarity') ? localStorage.getItem('kemet-docs-polarity') : 'light';
   }
 
   firstUpdated() {
-    this.initTheme();
+    this.initPolarity();
   }
 
   render() {
     return html`
-      <button @click="${() => this.toggleTheme()}">
+      <button @click="${() => this.togglePolarity()}">
         <span class="moon">${svgMoon}</span>
         <span class="sun">${svgSun}</span>
       </button>
     `;
   }
 
-  toggleTheme() {
-    if (this.theme === 'light') {
-      this.theme = 'dark';
+  togglePolarity() {
+    if (this.polarity === 'light') {
+      this.polarity = 'dark';
     } else {
-      this.theme = 'light';
+      this.polarity = 'light';
     }
 
     this.dispatchEvent(
-      new CustomEvent('docs-theme-change', {
+      new CustomEvent('docs-polarity-change', {
         bubbles: true,
         composed: true,
-        detail: this.theme,
+        detail: this.polarity,
       })
     );
 
-    window.localStorage.setItem('kemet-docs-theme', this.theme);
-    this.initTheme();
+    window.localStorage.setItem('kemet-docs-polarity', this.polarity);
+    this.initPolarity();
   }
 
-  initTheme() {
-    document.querySelector('html').setAttribute('theme', this.theme);
+  initPolarity() {
+    document.querySelector('html').setAttribute('polarity', this.polarity);
   }
 }
 
-customElements.define('docs-theme-icon', DocsThemeIcon);
+customElements.define('docs-polarity-icon', DocsPolarityIcon);

@@ -10,7 +10,7 @@ class DocsFooter extends LitElement {
           max-width: 1280px;
           margin: 4rem auto 0 auto;
           padding: 1rem 0;
-          border-top: 1px solid var(--kemet-color-black-50);;
+          border-top: 1px solid rgb(var(--kemet-color-black) / 50%);
         }
         a {
           color: inherit;

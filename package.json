@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "kemet-ui": "^2.0.1",
+    "kemet-ui": "^3.1.0",
     "lit": "^2.7.2",
     "markdown-it-attrs": "^4.1.6",
     "ssh2-sftp-client": "^9.0.4"

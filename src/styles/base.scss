@@ -5,59 +5,52 @@
 }
 
 :root {
-  --kemet-color-black-25: rgba(0,0,0,0.25);
-  --kemet-color-black-50: rgba(0,0,0,0.5);
-  --kemet-color-black-75: rgba(0,0,0,0.75);
-  --kemet-color-white-33: rgba(255,255,255,0.33);
-  --kemet-color-white-50: rgba(255,255,255,0.5);
-
-  --docs-text: var(--kemet-color-black);
-  --docs-background: var(--kemet-color-white-rich);
-  --docs-card-background: var(--kemet-color-white);
-  --docs-header-background: var(--kemet-color-white);
-  --docs-header-foreground: var(--kemet-color-black-50);
-  --docs-link-color: var(--kemet-color-primary);
+  --docs-text: rgb(var(--kemet-color-black));
+  --docs-background: rgb(var(--kemet-color-gray-100));
+  --docs-card-background: rgb(var(--kemet-color-white));
+  --docs-header-background: rgb(var(--kemet-color-white));
+  --docs-header-foreground: rgb(var(--kemet-color-black-50));
+  --docs-link-color: rgb(var(--kemet-color-primary));
   --docs-code-color: #303030;
-  --docs-code-background: var(--kemet-color-white);
+  --docs-code-background: rgb(var(--kemet-color-white));
   --docs-header-font: 'Open Sans', sans-serif;
-  --docs-intro-subtitle-color: var(--kemet-color-black-75);
-  --docs-intro-bracket-color: var(--kemet-color-black-25);
-  --docs-search-background: var(--kemet-color-white);
-  --docs-search-foreground: var(--kemet-color-black);
+  --docs-intro-subtitle-color: rgb(var(--kemet-color-black) / 75%);
+  --docs-intro-bracket-color: rgb(var(--kemet-color-black) / 25%);
+  --docs-search-background: rgb(var(--kemet-color-white));
+  --docs-search-foreground: rgb(var(--kemet-color-black));
   --docs-hljs-blue: #032f62;
-  --docs-hamburger-color: var(--kemet-color-black-50);
-  --docs-accordion-color: var(--kemet-color-black);
-  --docs-box-shadow1: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
-  --docs-box-shadow2: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 2rem 2rem 0 rgba(0, 0, 0, 0.1), 0 3rem 3rem 0 rgba(0, 0, 0, 0.15);
-  --docs-box-shadow3: 0 1.1rem 1.1rem 0 rgba(0, 0, 0, 0.1), 0 2.1rem 2.1rem 0 rgba(0, 0, 0, 0.1), 0 3.2rem 3.2rem 0 rgba(0, 0, 0, 0.15);
+  --docs-hamburger-color: rgb(var(--kemet-color-black) / 50%);
+  --docs-accordion-color: rgb(var(--kemet-color-black));
+  --docs-box-shadow1: var(--kemet-elevation-layer-1);
+  --docs-box-shadow2: var(--kemet-elevation-layer-2);
+  --docs-box-shadow3: var(--kemet-elevation-layer-3);
+  --docs-primary-to-white: rgb(var(--kemet-color-primary));
 }
 
-html[theme="dark"] {
-  --docs-text: var(--kemet-color-white-rich);
-  --docs-background: #0f0f0f;
-  --docs-card-background: var(--kemet-color-black);
-  --docs-header-background: var(--kemet-color-black);
-  --docs-header-foreground: var(--kemet-color-white-33);
-  --docs-link-color: #378ec1;
-  --docs-code-color: var(--kemet-color-white-rich);
-  --docs-code-background: var(--kemet-color-black);
-  --docs-intro-subtitle-color: var(--kemet-color-white-33);
-  --docs-intro-bracket-color: var(--kemet-color-white-50);
-  --docs-search-background: var(--kemet-color-black);
-  --docs-search-foreground: var(--kemet-color-white-rich);
-  --docs-hljs-blue: #2389ff;
-  --docs-hamburger-color: var(--kemet-color-white-50);
-  --docs-accordion-color: var(--kemet-color-white);
-}
-
-html[brand="lincoln"] {
-  --docs-header-font: var(--fds-font--miller);
+html[polarity="dark"] {
+  --docs-text: rgb(var(--kemet-color-gray-100));
+  --docs-background: rgb(var(--kemet-color-gray-950));
+  --docs-card-background: rgb(var(--kemet-color-black));
+  --docs-header-background: rgb(var(--kemet-color-gray-900));
+  --docs-header-foreground: rgb(var(--kemet-color-white) / 33%);
+  --docs-link-color: rgb(var(--kemet-color-sky-400));
+  --docs-code-color: rgb(var(--kemet-color-gray-100));
+  --docs-code-background: rgb(var(--kemet-color-black));
+  --docs-intro-subtitle-color: rgb(var(--kemet-color-white) / 33%);
+  --docs-intro-bracket-color: rgb(var(--kemet-color-white) / 50%);
+  --docs-search-background: rgb(var(--kemet-color-black));
+  --docs-search-foreground: rgb(var(--kemet-color-gray-100));
+  --docs-hljs-blue: rgb(var(--kemet-color-sky-500));
+  --docs-hamburger-color: rgb(var(--kemet-color-white) / 50%);
+  --docs-accordion-color: rgb(var(--kemet-color-white));
+  --docs-primary-to-white: rgb(var(--kemet-color-white));
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--docs-text);
+  background: var(--docs-background);
 }
 
 a {
@@ -129,8 +122,8 @@ pre code {
 body > kemet-drawer {
   display: block;
   --kemet-drawer-width: 80vw;
-  --kemet-drawer-color: var(--kemet-color-white);
-  --kemet-drawer-background: var(--kemet-color-primary);
+  --kemet-drawer-color: rgb(var(--kemet-color-white));
+  --kemet-drawer-background: rgb(var(--kemet-color-primary));
 }
 
 body > kemet-drawer > [slot="content"] {
@@ -175,7 +168,7 @@ body > kemet-modal > * {
   background-repeat: no-repeat;
 
   @media only screen and (min-width: 768px) {
-    padding-top: 4rem;
+    padding: 4rem 0 2rem 0;
     background-size: 100% auto;
   }
 
@@ -187,7 +180,8 @@ body > kemet-modal > * {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.75);
+    opacity: 0.85;
     z-index: 1;
+    background: var(--docs-background);
   }
 }
