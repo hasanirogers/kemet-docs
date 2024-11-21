@@ -12,18 +12,22 @@ class DocsFooter extends LitElement {
           padding: 1rem 0;
           border-top: 1px solid rgb(var(--kemet-color-black) / 50%);
         }
+
         a {
           color: inherit;
           text-decoration: none;
         }
+
         nav {
           display: flex;
           gap: 1rem;
         }
+
         footer {
           display: grid;
           gap: 1rem;
           grid-template-columns: 1fr auto;
+          padding: 0 2rem;
         }
       `
     ]
